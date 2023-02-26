@@ -7,6 +7,9 @@
 	{#each projectList as project}
 		<div class="projectBox">
 			<h2>
+				{#if project.iconFilename}
+					<img class="boxIcon" src={project.iconFilename} alt={`Picture of ${project.name}`} />
+				{/if}
 				{#if project.siteAddress}
 					<a href={project.siteAddress}>{project.name}</a>
 				{:else}
@@ -42,7 +45,14 @@
 		font-family: 'Indie Flower';
 		margin-bottom: 5px;
 	}
+
 	.projectBox div {
 		margin-bottom: 5px;
+	}
+	
+	.boxIcon {
+		max-width: 40px;
+		max-height: 40px;
+		vertical-align: bottom
 	}
 </style>
