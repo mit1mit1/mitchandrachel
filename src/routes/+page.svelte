@@ -2,27 +2,47 @@
 	import { projectList } from '../constants/projects';
 </script>
 
-<h1>Projects by mit1mit1</h1>
-{#each projectList as project}
-	<div class="projectBox">
-		<h2>{project.name}</h2>
-		{#if project.description}
-			<div>{project.description}</div>
-		{/if}
-		<div>
-			<a href={project.githubAddress}>GitHub</a>
-		</div>
-		{#if project.siteAddress}
+<div class="pageContainer">
+	<h1>Projects by mit1mit1</h1>
+	{#each projectList as project}
+		<div class="projectBox">
+			<h2>
+				{#if project.siteAddress}
+					<a href={project.siteAddress}>{project.name}</a>
+				{:else}
+					{project.name}
+				{/if}
+			</h2>
 			<div>
-				<a href={project.siteAddress}>Site</a>
+				Github: <a href={project.githubAddress}>{project.githubAddress}</a>
 			</div>
-		{/if}
-	</div>
-{/each}
+			{#if project.description}
+				<div>{project.description}</div>
+			{/if}
+		</div>
+	{/each}
+</div>
 
 <style>
-	.clickable {
-		cursor: pointer;
-		font-weight: bold;
+	.projectBox {
+		max-width: 550px;
+	}
+
+	.pageContainer {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: Quicksand;
+	}
+	.pageContainer h1 {
+		font-family: 'Architects Daughter';
+	}
+
+	.projectBox h2 {
+		font-family: 'Indie Flower';
+		margin-bottom: 5px;
+	}
+	.projectBox div {
+		margin-bottom: 5px;
 	}
 </style>
