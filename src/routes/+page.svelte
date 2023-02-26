@@ -1,5 +1,6 @@
 <script setup lang="ts">
 	import { projectList } from '../constants/projects';
+	import { assets, base } from '$app/paths';
 </script>
 
 <div class="pageContainer">
@@ -8,7 +9,7 @@
 		<div class="projectBox">
 			<h2>
 				{#if project.iconName}
-					<img class="boxIcon" src={project.iconName} alt={`Picture of ${project.name}`} />
+					<img class="boxIcon" src={`${base}/images/${project.iconName}`} alt={`Picture of ${project.name}`} />
 				{/if}
 				{#if project.siteAddress}
 					<a href={project.siteAddress}>{project.name}</a>
