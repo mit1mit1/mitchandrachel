@@ -7,8 +7,8 @@
 	{#each projectList as project}
 		<div class="projectBox">
 			<h2>
-				{#if project.iconFilename}
-					<img class="boxIcon" src={project.iconFilename} alt={`Picture of ${project.name}`} />
+				{#if project.iconName}
+					<img class="boxIcon" src={project.iconName} alt={`Picture of ${project.name}`} />
 				{/if}
 				{#if project.siteAddress}
 					<a href={project.siteAddress}>{project.name}</a>

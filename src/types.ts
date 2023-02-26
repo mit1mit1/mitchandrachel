@@ -3,5 +3,5 @@ export type ProjectInfo = {
 	description?: string;
 	githubAddress: string;
 	siteAddress?: string;
-	iconFilename?: string;
+	iconName?: string;
 };
