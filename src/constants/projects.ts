@@ -10,19 +10,19 @@ export const projectList: Array<ProjectInfo> = [
 		iconName: 'musicle.ico'
 	},
 	{
-		name: 'Software Dev Resources',
-		description: `A collection of links to various resources I've found helpful as a software dev, plus notes on some of them, and a comic representation of some of the notes.`,
-		githubAddress: 'https://github.com/mit1mit1/software-dev-resources',
-		siteAddress: 'https://mit1mit1.github.io/software-dev-resources',
-		iconName: 'beanie.ico'
-	},
-	{
 		name: 'Newtonian Dog Fighter 3000',
 		description:
 			'Flying small circles around bigger ones and run into each other.',
 		githubAddress: 'https://github.com/mit1mit1/newtonian-dog-fighter-3000',
 		siteAddress: 'https://mit1mit1.github.io/newtonian-dog-fighter-3000',
 		iconName: 'newtonian.png'
+	},
+	{
+		name: 'Software Dev Resources',
+		description: `A collection of links to various resources I've found helpful as a software dev, plus notes on some of them, and a comic representation of some of the notes.`,
+		githubAddress: 'https://github.com/mit1mit1/software-dev-resources',
+		siteAddress: 'https://mit1mit1.github.io/software-dev-resources',
+		iconName: 'beanie.ico'
 	},
 	{
 		name: 'Explomandlebrot',

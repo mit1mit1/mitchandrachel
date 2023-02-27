@@ -4,7 +4,8 @@
 	import { assets, base } from '$app/paths';
 </script>
 
-<h1>Projects by mit1mit1</h1>
+<h1>Projects by Midly</h1>
+<div class="subheading">In decreasing order of polish</div>
 {#each projectList as project}
 	<div class="projectBox">
 		<h2>
@@ -66,10 +67,18 @@
 
 	h1 {
 		font-family: 'Architects Daughter';
+        margin-bottom: 5px;
 	}
 
     .detailsBox {
         padding: 5px;
         margin: 5px;
+    }
+
+    .subheading {
+        margin-bottom: 15px;
+        font-style: italic;
+        font-family: 'Architects Daughter';
+        font-size: 1.2em;
     }
 </style>
