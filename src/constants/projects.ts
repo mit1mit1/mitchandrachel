@@ -19,7 +19,7 @@ export const projectList: Array<ProjectInfo> = [
 	{
 		name: 'Newtonian Dog Fighter 3000',
 		description:
-			'A game about flying small circles around bigger ones and running into each other.',
+			'Flying small circles around bigger ones and run into each other.',
 		githubAddress: 'https://github.com/mit1mit1/newtonian-dog-fighter-3000',
 		siteAddress: 'https://mit1mit1.github.io/newtonian-dog-fighter-3000',
 		iconName: 'newtonian.png'
@@ -27,15 +27,14 @@ export const projectList: Array<ProjectInfo> = [
 	{
 		name: 'Explomandlebrot',
 		description:
-			'An audio-visual fractal experience. Slide around the Mandlebrot set while listing to music generated from it.',
+			'An audio-visual fractal experience. Slide around the Mandlebrot set while listening to music generated from it.',
 		githubAddress: 'https://github.com/mit1mit1/explomandlebrot',
 		siteAddress: 'https://mit1mit1.github.io/explomandlebrot',
 		iconName: 'mandlebrot.ico'
 	},
 	{
 		name: 'Napoleonic Chess Simulator 3000',
-		description:
-			'A game about learning chess, playing chess, and failing history class.',
+		description: 'A game about learning French, playing chess, and failing history class.',
 		githubAddress: 'https://github.com/mit1mit1/napoleonic-chess-simulator-3000',
 		siteAddress: 'https://mit1mit1.github.io/napoleonic-chess-simulator-3000',
 		iconName: 'Napoleon.svg'

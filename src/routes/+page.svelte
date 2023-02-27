@@ -1,59 +1,62 @@
-<script setup lang="ts">
-	import { projectList } from '../constants/projects';
-	import { assets, base } from '$app/paths';
+<script lang="ts">
+	import Projects from '../components/Projects.svelte';
+	import SupportUs from '../components/SupportUs.svelte';
+	import AboutMe from '../components/AboutMe.svelte';
+	import Contact from '../components/Contact.svelte';
+	const tabs = ['About me', 'Projects', 'Support us', 'Contact'];
+	let selectedTab = 'About me';
+
+	const selectTab = (tab: string) => {
+		selectedTab = tab;
+	};
 </script>
 
 <div class="pageContainer">
-	<h1>Projects by mit1mit1</h1>
-	{#each projectList as project}
-		<div class="projectBox">
-			<h2>
-				{#if project.iconName}
-					<img class="boxIcon" src={`${base}/images/${project.iconName}`} alt={`Picture of ${project.name}`} />
-				{/if}
-				{#if project.siteAddress}
-					<a href={project.siteAddress}>{project.name}</a>
-				{:else}
-					{project.name}
-				{/if}
-			</h2>
-			<div>
-				Github: <a href={project.githubAddress}>{project.githubAddress}</a>
-			</div>
-			{#if project.description}
-				<div>{project.description}</div>
-			{/if}
-		</div>
-	{/each}
+	<ul class="navContainer">
+		{#each tabs as tab}
+			<button on:click={() => selectTab(tab)} class={tab === selectedTab && 'selectedTab'}
+				>{tab}</button
+			>
+		{/each}
+	</ul>
+	{#if selectedTab === 'About me'}
+		<AboutMe />
+	{:else if selectedTab === 'Projects'}
+		<Projects />
+	{:else if selectedTab === 'Support us'}
+		<SupportUs />
+	{:else if selectedTab === 'Contact'}
+		<Contact />
+	{/if}
 </div>
 
 <style>
-	.projectBox {
-		max-width: 550px;
+	.navContainer {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.navContainer button {
+		margin-right: 2px;
+		margin-bottom: 5px;
+		transition-duration: 0.4s;
+		border: none;
+		padding: 8px 12px;
+		min-height: 40px;
+		min-width: 100px;
+		font-size: 0.95em;
+		font-family: 'Quicksand', sans-serif;
+		cursor: pointer;
+	}
+
+	.navContainer .selectedTab {
+		background-color: #aaa;
 	}
 
 	.pageContainer {
 		max-width: 900px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 10px;
 		font-family: Quicksand;
-	}
-	.pageContainer h1 {
-		font-family: 'Architects Daughter';
-	}
-
-	.projectBox h2 {
-		font-family: 'Indie Flower';
-		margin-bottom: 5px;
-	}
-
-	.projectBox div {
-		margin-bottom: 5px;
-	}
-	
-	.boxIcon {
-		max-width: 40px;
-		max-height: 40px;
-		vertical-align: bottom
 	}
 </style>
