@@ -1,4 +1,4 @@
-<svg width="150" height="250" viewBox="0 0 270 500">
+<svg width="150" height="250" viewBox="0 0 270 500" class="wavingMeSVG" >
 	<rect
 		class="stick-head"
 		x="80"
@@ -157,10 +157,7 @@
 </svg>
 
 <style>
-	.panel {
-		max-width: 350px;
-		min-width: 290px;
-		font-family: Indie Flower;
-		font-size: 32px;
+	.wavingMeSVG {
+		margin-top: -50px;
 	}
 </style>

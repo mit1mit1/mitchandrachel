@@ -4,7 +4,7 @@
 	import { assets, base } from '$app/paths';
 </script>
 
-<h1>Projects by Midly</h1>
+<h1>Projects</h1>
 <div class="subheading">In decreasing order of polish</div>
 {#each projectList as project}
 	<div class="projectBox">

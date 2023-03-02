@@ -3,7 +3,7 @@
 	import SupportUs from '../components/SupportUs.svelte';
 	import AboutMe from '../components/AboutMe.svelte';
 	import Contact from '../components/Contact.svelte';
-	const tabs = ['About me', 'Projects', 'Support us', 'Contact'];
+	const tabs = ['About me', 'Projects', 'Contact', 'Support us'];
 	let selectedTab = 'About me';
 
 	const selectTab = (tab: string) => {
@@ -11,24 +11,28 @@
 	};
 </script>
 
-<div class="pageContainer">
-	<ul class="navContainer">
-		{#each tabs as tab}
-			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
-				>{tab}</button
-			>
-		{/each}
-	</ul>
-	{#if selectedTab === 'About me'}
-		<AboutMe />
-	{:else if selectedTab === 'Projects'}
-		<Projects />
-	{:else if selectedTab === 'Support us'}
-		<SupportUs />
-	{:else if selectedTab === 'Contact'}
-		<Contact />
-	{/if}
-</div>
+<body class="app" data-sveltekit-preload-data="hover">
+	<div style="display: contents">
+		<div class="pageContainer">
+			<ul class="navContainer">
+				{#each tabs as tab}
+					<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
+						>{tab}</button
+					>
+				{/each}
+			</ul>
+			{#if selectedTab === 'About me'}
+				<AboutMe />
+			{:else if selectedTab === 'Projects'}
+				<Projects />
+			{:else if selectedTab === 'Support us'}
+				<SupportUs />
+			{:else if selectedTab === 'Contact'}
+				<Contact />
+			{/if}
+		</div>
+	</div>
+</body>
 
 <style>
 	.navContainer {
@@ -55,21 +59,34 @@
 		}
 	}
 
+	.navContainer button:hover {
+		background-color: #c4c3c3;
+	}
+
 	.navContainer .selectedTab {
-		background-color: #aaa;
+		background-color: #d7d7d7;
 	}
 
 	.pageContainer {
 		max-width: 900px;
 		margin-left: 10px;
+		margin-right: 10px;
 		font-family: Quicksand;
 	}
-	
 	@media (max-width: 640px) {
 		.pageContainer {
 			width: 100%;
 			margin-left: 0px;
-
+			margin-right: 0px;
 		}
+	}
+	@media (max-width: 270px) {
+		.pageContainer {
+			overflow-wrap: anywhere;
+		}
+	}
+
+	.app {
+		background-color: #f8f8f8;
 	}
 </style>
