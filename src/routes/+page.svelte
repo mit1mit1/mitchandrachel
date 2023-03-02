@@ -88,5 +88,6 @@
 
 	.app {
 		background-color: #fafafa;
+		min-height: 100%;
 	}
 </style>
