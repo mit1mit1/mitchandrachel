@@ -1,6 +1,9 @@
-name: Unit Tests
+name: Pre-merge tests
 
-on: [push]
+on:
+  push:
+    branches-ignore:
+    - main
 
 jobs:
   build:
@@ -18,4 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
-    # - run: yarn test:unit:coverage
+    - run: yarn test:unit:coverage
+    - run: npx playwright install --with-deps
+    - run: yarn test
+    - run: yarn build
