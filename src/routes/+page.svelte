@@ -36,6 +36,7 @@
 
 <style>
 	.navContainer {
+		max-width: 900px;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -68,7 +69,6 @@
 	}
 
 	.pageContainer {
-		max-width: 900px;
 		margin-left: 10px;
 		margin-right: 10px;
 		font-family: Quicksand;
@@ -87,7 +87,7 @@
 	}
 
 	.app {
-		background-color: #fafafa;
+		background-color: #f8f8f8;
 		min-height: 100%;
 	}
 </style>
