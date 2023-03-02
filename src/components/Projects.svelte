@@ -50,7 +50,7 @@
 <style>
 	.projectBox {
 		max-width: 510px;
-		display: inline-block;
+		float: left;
 		padding: 5px;
 		margin-right: 50px;
 	}

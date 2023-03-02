@@ -22,7 +22,7 @@
 
 <style>
 	.aboutMeBox {
-		max-width: 550px;
+		max-width: 600px;
 	}
 
 	.aboutMeBox div {
@@ -36,5 +36,6 @@
 	.aboutMeText {
 		display: inline-block;
 		vertical-align: top;
+		max-width: 400px;
 	}
 </style>
