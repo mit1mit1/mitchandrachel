@@ -14,13 +14,13 @@
 <body class="app" data-sveltekit-preload-data="hover">
 	<div style="display: contents">
 		<div class="pageContainer">
-			<ul class="navContainer">
+			<div class="navContainer">
 				{#each tabs as tab}
 					<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
 						>{tab}</button
 					>
 				{/each}
-			</ul>
+			</div>
 			{#if selectedTab === 'About me'}
 				<AboutMe />
 			{:else if selectedTab === 'Projects'}
@@ -87,6 +87,6 @@
 	}
 
 	.app {
-		background-color: #f8f8f8;
+		background-color: #fafafa;
 	}
 </style>
