@@ -14,7 +14,7 @@
 <div class="pageContainer">
 	<ul class="navContainer">
 		{#each tabs as tab}
-			<button on:click={() => selectTab(tab)} class={tab === selectedTab && 'selectedTab'}
+			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
 				>{tab}</button
 			>
 		{/each}
@@ -44,10 +44,15 @@
 		border: none;
 		padding: 8px 12px;
 		min-height: 40px;
-		min-width: 100px;
+		width: 20%;
 		font-size: 0.95em;
 		font-family: 'Quicksand', sans-serif;
 		cursor: pointer;
+	}
+	@media (max-width: 640px) {
+		.navContainer button {
+			width: 100%;
+		}
 	}
 
 	.navContainer .selectedTab {
@@ -58,5 +63,13 @@
 		max-width: 900px;
 		margin-left: 10px;
 		font-family: Quicksand;
+	}
+	
+	@media (max-width: 640px) {
+		.pageContainer {
+			width: 100%;
+			margin-left: 0px;
+
+		}
 	}
 </style>

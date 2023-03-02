@@ -8,10 +8,10 @@
 <div class="subheading">In decreasing order of polish</div>
 {#each projectList as project}
 	<div class="projectBox">
-		<h2>
+		<h2 class="projectTitle">
 			{#if project.iconName}
 				{#if project.siteAddress}
-					<a href={project.siteAddress} target="_blank">
+					<a href={project.siteAddress} target="_blank" rel="noreferrer">
 						<img
 							class="boxIcon"
 							src={`${base}/images/${project.iconName}`}
@@ -27,14 +27,14 @@
 				{/if}
 			{/if}
 			{#if project.siteAddress}
-				<a href={project.siteAddress} target="_blank">{project.name}</a>
+				<a href={project.siteAddress} target="_blank" rel="noreferrer">{project.name}</a>
 			{:else}
 				{project.name}
 			{/if}
 		</h2>
 		<div class="detailsBox">
 			<div>
-				Github: <a href={project.githubAddress} target="_blank"
+				Github: <a href={project.githubAddress} target="_blank" rel="noreferrer"
 					>{prettifyAddress(project.githubAddress)}</a
 				>
 			</div>
@@ -50,9 +50,16 @@
 		max-width: 550px;
 	}
 
-	.projectBox h2 {
+	.projectTitle {
 		font-family: 'Indie Flower';
 		margin-bottom: 5px;
+		display: flex;
+	}
+
+	.projectTitle a {
+		margin-right: 10px;
+		align-items: center;
+		display: flex
 	}
 
 	.projectBox div {
