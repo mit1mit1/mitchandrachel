@@ -53,9 +53,9 @@
 		transition-duration: 0.4s;
 		border: none;
 		padding: 8px 12px;
-		min-height: 40px;
+		min-height: 50px;
 		width: 100%;
-		font-size: 0.95em;
+		font-size: 1.15em;
 		font-family: 'Quicksand', sans-serif;
 		cursor: pointer;
 	}
