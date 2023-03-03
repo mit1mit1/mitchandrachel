@@ -48,9 +48,19 @@
 </div>
 
 <style>
+	.projectsContainer {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+	@media (max-width: 400px) {
+		.projectsContainer {
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		}
+	}
+
 	.projectBox {
 		max-width: 510px;
-		float: left;
 		padding: 5px;
 		margin-right: 50px;
 	}
