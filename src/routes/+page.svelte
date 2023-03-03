@@ -36,7 +36,6 @@
 
 <style>
 	.navContainer {
-		max-width: 900px;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
