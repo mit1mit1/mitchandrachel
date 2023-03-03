@@ -41,6 +41,12 @@
 		margin: 0;
 		padding: 0;
 	}
+	@media (min-width: 500px) {
+		.navContainer {
+			display: flex;
+    	justify-content: space-evenly;
+		}
+	}
 
 	.navContainer button {
 		margin-right: 2px;
@@ -49,15 +55,10 @@
 		border: none;
 		padding: 8px 12px;
 		min-height: 40px;
-		width: 20%;
+		width: 100%;
 		font-size: 0.95em;
 		font-family: 'Quicksand', sans-serif;
 		cursor: pointer;
-	}
-	@media (max-width: 640px) {
-		.navContainer button {
-			width: 100%;
-		}
 	}
 
 	.navContainer button:hover {
