@@ -43,7 +43,7 @@
 	@media (min-width: 500px) {
 		.navContainer {
 			display: flex;
-    	justify-content: space-evenly;
+    		justify-content: space-evenly;
 		}
 	}
 
