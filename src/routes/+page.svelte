@@ -3,7 +3,7 @@
 	import SupportUs from '../components/SupportUs.svelte';
 	import AboutMe from '../components/AboutMe.svelte';
 	import Contact from '../components/Contact.svelte';
-	const tabs = ['About me', 'Projects', 'Contact', 'Support us'];
+	const tabs = ['About me', 'Projects', 'Contact', 'Support'];
 	let selectedTab = 'About me';
 
 	const selectTab = (tab: string) => {
@@ -25,7 +25,7 @@
 				<AboutMe />
 			{:else if selectedTab === 'Projects'}
 				<Projects />
-			{:else if selectedTab === 'Support us'}
+			{:else if selectedTab === 'Support'}
 				<SupportUs />
 			{:else if selectedTab === 'Contact'}
 				<Contact />

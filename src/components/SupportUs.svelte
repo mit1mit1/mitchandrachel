@@ -1,4 +1,4 @@
-<h1>Support us</h1>
+<h1>Support</h1>
 <div class="supportUsBox">
 	<div>
 		If you enjoy my work and reckon it's worth a few bucks, please consider donating to:
