@@ -13,10 +13,9 @@
 			NodeJS and React.
 		</div>
 		<div>
-			When I'm not working with those, I dabble in game design as an excuse to use Vue, Svelte, C and a touch of Rust.
+			When I'm not working with those, I dabble in game design as an excuse to use Vue, Svelte, C
+			and a touch of Rust.
 		</div>
-		<div>I think it's apparent I need to rethink my life a little bit.</div>
-		<div />
 	</div>
 </div>
 
