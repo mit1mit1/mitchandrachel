@@ -8,7 +8,10 @@
 	<div class="aboutMeText">
 		<div>This - is, me.</div>
 		<div>
-			I'm an advanced mathematics major with a thesis in philosophy. I have 6 years of software
+			I'm an advanced mathematics major with a thesis in philosophy.
+		</div>
+		<div>	
+		I have 6 years of software
 			engineering experience, starting with php and jQuery, and (thankfully) continuing with Python,
 			NodeJS and React.
 		</div>

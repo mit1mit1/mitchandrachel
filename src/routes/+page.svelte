@@ -20,8 +20,12 @@
 <body class="app" data-sveltekit-preload-data="hover">
 	<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
 		{#each tabs as tab}
-			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
-				>{tab}</button
+			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}>
+				{#if tab === selectedTab && expandedContainer === false}
+					<i class="fa-solid fa-bars phoneOnly buttonIcon"></i>
+				{/if}
+				{tab}
+			</button
 			>
 		{/each}
 	</div>
@@ -41,6 +45,17 @@
 </body>
 
 <style>
+	.buttonIcon {
+		float: left;
+		padding-top: 2px;
+	}
+
+	@media (min-width: 500px) {
+		.phoneOnly {
+			display: none;
+		}
+	}
+
 	:global(h1) {
 		font-family: 'Architects Daughter';
 		display: none;
