@@ -20,12 +20,12 @@
 </div>
 
 <style>
-	.aboutMeBox div {
-		margin-bottom: 15px;
+	.aboutMeBox {
+		display: flex;
 	}
 
-	h1 {
-		font-family: 'Architects Daughter';
+	.aboutMeBox div {
+		margin-bottom: 15px;
 	}
 
 	.aboutMeText {

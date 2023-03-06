@@ -159,5 +159,6 @@
 <style>
 	.wavingMeSVG {
 		margin-top: -50px;
+		min-width: 100px;
 	}
 </style>

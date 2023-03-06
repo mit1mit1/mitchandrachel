@@ -5,22 +5,28 @@
 	import Contact from '../components/Contact.svelte';
 	const tabs = ['About me', 'Projects', 'Contact', 'Support'];
 	let selectedTab = 'About me';
+	let expandedContainer = false;
 
 	const selectTab = (tab: string) => {
+		if (selectedTab === tab && expandedContainer === false) {
+			expandedContainer = true;
+		} else {
+			expandedContainer = false;
+		}
 		selectedTab = tab;
 	};
 </script>
 
 <body class="app" data-sveltekit-preload-data="hover">
+	<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
+		{#each tabs as tab}
+			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
+				>{tab}</button
+			>
+		{/each}
+	</div>
 	<div style="display: contents">
 		<div class="pageContainer">
-			<div class="navContainer">
-				{#each tabs as tab}
-					<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}
-						>{tab}</button
-					>
-				{/each}
-			</div>
 			{#if selectedTab === 'About me'}
 				<AboutMe />
 			{:else if selectedTab === 'Projects'}
@@ -35,29 +41,57 @@
 </body>
 
 <style>
+	:global(h1) {
+		font-family: 'Architects Daughter';
+		display: none;
+	}
+	@media (min-width: 500px) {
+		:global(h1) {
+			display: block;
+		}
+	}
+
 	.navContainer {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+		margin-bottom: 20px;
 	}
 	@media (min-width: 500px) {
 		.navContainer {
 			display: flex;
-    		justify-content: space-evenly;
+			justify-content: space-evenly;
+			margin-bottom: 0px;
 		}
 	}
 
 	.navContainer button {
-		margin-right: 2px;
 		margin-bottom: 5px;
 		transition-duration: 0.4s;
 		border: none;
 		padding: 8px 12px;
-		min-height: 50px;
 		width: 100%;
 		font-size: 1.15em;
 		font-family: 'Quicksand', sans-serif;
 		cursor: pointer;
+		min-height: 50px;
+		overflow: hidden;
+		transition: max-height 0.5s ease-out;
+		display: none;
+	}
+	@media (min-width: 500px) {
+		.navContainer button {
+			display: inline-block;
+		}
+	}
+
+	.navContainer button.selectedTab {
+		display: inline-block;
+	}
+
+	.navContainer.expandedContainer button {
+		transition: max-height 0.5s ease-out;
+		display: inline-block;
 	}
 
 	.navContainer button:hover {
@@ -69,15 +103,12 @@
 	}
 
 	.pageContainer {
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 18px;
+		margin-right: 18px;
 		font-family: Quicksand;
 	}
 	@media (max-width: 640px) {
 		.pageContainer {
-			width: 100%;
-			margin-left: 0px;
-			margin-right: 0px;
 		}
 	}
 	@media (max-width: 270px) {
@@ -89,5 +120,6 @@
 	.app {
 		background-color: #f8f8f8;
 		min-height: 100%;
+		margin: 0px;
 	}
 </style>
