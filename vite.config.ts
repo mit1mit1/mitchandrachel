@@ -5,6 +5,7 @@ const config: UserConfig = {
 	plugins: [sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}'],
+		exclude: ['.pnp.*'],
 		coverage: {
 			reporter: ['text', 'json', 'html'],
 			lines: 40,
