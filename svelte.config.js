@@ -11,7 +11,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: dev ? '' : '/index',
+			base: dev ? '' : '',
 		  },
 		adapter: adapter({
 			// default options are shown. On some platforms
