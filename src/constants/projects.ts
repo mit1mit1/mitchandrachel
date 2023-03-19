@@ -34,9 +34,15 @@ export const projectList: Array<ProjectInfo> = [
 	},
 	{
 		name: 'Napoleonic Chess Simulator 3000',
-		description: 'A game about learning French, playing chess, and failing history class.',
+		description: 'A game about learning French, playing chess, and failing history class. Featuring art from Tom Su (contact me if you would like to approach him about an art contract).',
 		githubAddress: 'https://github.com/mit1mit1/napoleonic-chess-simulator-3000',
 		siteAddress: 'https://mit1mit1.github.io/napoleonic-chess-simulator-3000',
 		iconName: 'Napoleon.svg'
+	},
+	{
+		name: 'Uncut Jams',
+		description: 'Just some videos of me jamming on various instruments.',
+		siteAddress: 'https://www.youtube.com/@UncutJams-je9ts',
+		iconName: 'musicle.ico'
 	}
 ];

@@ -34,11 +34,13 @@
 				{/if}
 			</h2>
 			<div class="detailsBox">
-				<div>
-					Github: <a href={project.githubAddress} target="_blank" rel="noreferrer"
-						>{prettifyAddress(project.githubAddress)}</a
-					>
-				</div>
+				{#if project.githubAddress}
+					<div>
+						Github: <a href={project.githubAddress} target="_blank" rel="noreferrer"
+							>{prettifyAddress(project.githubAddress)}</a
+						>
+					</div>
+				{/if}
 				{#if project.description}
 					<div>{project.description}</div>
 				{/if}
