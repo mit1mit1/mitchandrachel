@@ -43,6 +43,6 @@ export const projectList: Array<ProjectInfo> = [
 		name: 'Uncut Jams',
 		description: 'Just some videos of me jamming on various instruments.',
 		siteAddress: 'https://www.youtube.com/@UncutJams-je9ts',
-		iconName: 'musicle.ico'
+		iconName: 'youtubeLogo.svg'
 	}
 ];
