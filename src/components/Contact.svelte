@@ -1,16 +1,21 @@
 <h1>Contact</h1>
 <div class="contactBox">
 	<div>
-		Gmail: <a href="mailto:guessthetunegame@gmail.com">guessthetunegame@gmail.com</a>
+		<span class="label">Gmail: </span>
+		<a href="mailto:guessthetunegame@gmail.com">guessthetunegame@gmail.com</a>
 	</div>
 
 	<div>
-		GitHub: <a href="https://github.com/mit1mit1/" target="_blank" rel="noreferrer">github.com/mit1mit1/</a>
+		<span class="label">LinkedIn: </span>
+		<a href="https://www.linkedin.com/in/midly/" target="_blank" rel="noreferrer"
+			>linkedin.com/in/midly/</a
+		>
 	</div>
 
 	<div>
-		LinkedIn: <a href="https://www.linkedin.com/in/midly/" target="_blank" rel="noreferrer">linkedin.com/in/midly/</a>
-	</div>    
+		<span class="label">GitHub: </span>
+		<a href="https://github.com/mit1mit1/" target="_blank" rel="noreferrer">github.com/mit1mit1/</a>
+	</div>
 </div>
 
 <style>
@@ -24,5 +29,10 @@
 
 	h1 {
 		font-family: 'Architects Daughter';
+	}
+
+	.label {
+		min-width: 5em;
+		display: inline-block;
 	}
 </style>

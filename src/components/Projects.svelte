@@ -4,7 +4,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<h1>Projects</h1>
+<h1>Personal projects</h1>
 <div class="subheading">In decreasing order of polish</div>
 <div class="projectsContainer">
 	{#each projectList as project}

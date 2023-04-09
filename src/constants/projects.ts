@@ -3,8 +3,7 @@ import type { ProjectInfo } from '../types';
 export const projectList: Array<ProjectInfo> = [
 	{
 		name: 'Guess the Tune',
-		description:
-			'A wordle inspired game designed to help teach sheet music reading and basic music theory.',
+		description: 'A wordle-like game designed to teach sheet music reading.',
 		githubAddress: 'https://github.com/mit1mit1/guess-the-tune',
 		siteAddress: 'https://mit1mit1.github.io/guess-the-tune',
 		iconName: 'musicle.ico'

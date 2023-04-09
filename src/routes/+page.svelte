@@ -3,7 +3,7 @@
 	import SupportUs from '../components/SupportUs.svelte';
 	import AboutMe from '../components/AboutMe.svelte';
 	import Contact from '../components/Contact.svelte';
-	const tabs = ['About me', 'Projects', 'Contact', 'Support'];
+	const tabs = ['About me', 'Personal projects', 'Contact', 'Support'];
 	let selectedTab = 'About me';
 	let expandedContainer = false;
 
@@ -22,18 +22,17 @@
 		{#each tabs as tab}
 			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}>
 				{#if tab === selectedTab && expandedContainer === false}
-					<i class="fa-solid fa-bars phoneOnly buttonIcon"></i>
+					<i class="fa-solid fa-bars phoneOnly buttonIcon" />
 				{/if}
 				{tab}
-			</button
-			>
+			</button>
 		{/each}
 	</div>
 	<div style="display: contents">
 		<div class="pageContainer">
 			{#if selectedTab === 'About me'}
 				<AboutMe />
-			{:else if selectedTab === 'Projects'}
+			{:else if selectedTab === 'Personal projects'}
 				<Projects />
 			{:else if selectedTab === 'Support'}
 				<SupportUs />
