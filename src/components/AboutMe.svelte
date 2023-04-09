@@ -8,16 +8,16 @@
 	<div class="aboutMeText">
 		<div>This - is, me.</div>
 		<div>
-			I'm an advanced mathematics major with a thesis in philosophy.
-		</div>
-		<div>	
-		I have 6 years of software
-			engineering experience, starting with php and jQuery, and (thankfully) continuing with Python,
-			NodeJS and React.
+			I have 6 years of software development experience, mostly in Typescript/NodeJS, React and
+			Python.
 		</div>
 		<div>
-			When I'm not working with those, I dabble in game design as an excuse to use Vue, Svelte, C
-			and a touch of Rust.
+			When I'm not working with those, I dabble in music and math flavoured projects as an
+			excuse to try out new languages and frameworks.
+		</div>
+		<div>
+			When I'm not working with <i>those</i>, I enjoy actually playing music, reading philosophy and
+			fantasy, and board-gaming.
 		</div>
 	</div>
 </div>

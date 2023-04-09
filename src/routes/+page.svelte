@@ -89,6 +89,7 @@
 		font-size: 1.15em;
 		font-family: 'Quicksand', sans-serif;
 		cursor: pointer;
+		color: black;
 		min-height: 50px;
 		overflow: hidden;
 		transition: max-height 0.5s ease-out;

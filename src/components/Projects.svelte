@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import { projectList } from '../constants/projects';
 	import { prettifyAddress } from '../utils/stringManipulation';
-	import { assets, base } from '$app/paths';
+	import { base } from '$app/paths';
 </script>
 
 <h1>Projects</h1>

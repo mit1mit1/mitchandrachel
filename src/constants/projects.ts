@@ -10,16 +10,15 @@ export const projectList: Array<ProjectInfo> = [
 		iconName: 'musicle.ico'
 	},
 	{
-		name: 'Newtonian Dog Fighter 3000',
-		description:
-			'Flying small circles around bigger ones and run into each other.',
+		name: 'Newtonian Dog Fighter',
+		description: 'Fly small circles around bigger ones and run into each other.',
 		githubAddress: 'https://github.com/mit1mit1/newtonian-dog-fighter-3000',
 		siteAddress: 'https://mit1mit1.github.io/newtonian-dog-fighter-3000',
 		iconName: 'newtonian.png'
 	},
 	{
 		name: 'Software Dev Resources',
-		description: `A collection of links to various resources I've found helpful as a software dev, plus notes on some of them, and a comic representation of some of the notes.`,
+		description: `Notes on some resources I've found helpful as a software developer, and a comic based on some of the notes.`,
 		githubAddress: 'https://github.com/mit1mit1/software-dev-resources',
 		siteAddress: 'https://mit1mit1.github.io/software-dev-resources',
 		iconName: 'beanie.ico'
@@ -33,16 +32,11 @@ export const projectList: Array<ProjectInfo> = [
 		iconName: 'mandlebrot.ico'
 	},
 	{
-		name: 'Napoleonic Chess Simulator 3000',
-		description: 'A game about learning French, playing chess, and failing history class. Featuring art from Tom Su (contact me if you would like to approach him about an art contract).',
+		name: 'Napoleonic Chess Simulator',
+		description:
+			'Learn French, play chess, and fail history class. Featuring art by Tom Su (contact details available on request).',
 		githubAddress: 'https://github.com/mit1mit1/napoleonic-chess-simulator-3000',
 		siteAddress: 'https://mit1mit1.github.io/napoleonic-chess-simulator-3000',
 		iconName: 'Napoleon.svg'
-	},
-	{
-		name: 'Uncut Jams',
-		description: 'Just some videos of me jamming on various instruments.',
-		siteAddress: 'https://www.youtube.com/@UncutJams-je9ts',
-		iconName: 'youtubeLogo.svg'
 	}
 ];
