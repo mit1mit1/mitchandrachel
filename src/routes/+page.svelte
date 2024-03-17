@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Projects from '../components/Projects.svelte';
-	import SupportUs from '../components/SupportUs.svelte';
-	import AboutMe from '../components/AboutMe.svelte';
-	import Contact from '../components/Contact.svelte';
-	const tabs = ['About me', 'Personal projects', 'Contact', 'Support'];
-	let selectedTab = 'About me';
+	import Schedule from '../components/Schedule.svelte';
+	import RSVP from '../components/RSVP.svelte';
+	import Home from '../components/Home.svelte';
+	import Registry from '../components/Registry.svelte';
+	const tabs = ['Home', 'Schedule', 'Registry', 'RSVP'];
+	let selectedTab = 'Home';
 	let expandedContainer = false;
 
 	const selectTab = (tab: string) => {
@@ -18,27 +18,30 @@
 </script>
 
 <body class="app" data-sveltekit-preload-data="hover">
-	<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
-		{#each tabs as tab}
-			<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}>
-				{#if tab === selectedTab && expandedContainer === false}
-					<i class="fa-solid fa-bars phoneOnly buttonIcon" />
+	<div class="contentContainer">
+		<h1>Mitch and Rachel</h1>
+		<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
+			{#each tabs as tab}
+				<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}>
+					{#if tab === selectedTab && expandedContainer === false}
+						<i class="fa-solid fa-bars phoneOnly buttonIcon" />
+					{/if}
+					{tab}
+				</button>
+			{/each}
+		</div>
+		<div style="display: contents">
+			<div class="pageContainer">
+				{#if selectedTab === 'Home'}
+					<Home />
+				{:else if selectedTab === 'Schedule'}
+					<Schedule />
+				{:else if selectedTab === 'Registry'}
+					<Registry />
+				{:else if selectedTab === 'RSVP'}
+					<RSVP />
 				{/if}
-				{tab}
-			</button>
-		{/each}
-	</div>
-	<div style="display: contents">
-		<div class="pageContainer">
-			{#if selectedTab === 'About me'}
-				<AboutMe />
-			{:else if selectedTab === 'Personal projects'}
-				<Projects />
-			{:else if selectedTab === 'Support'}
-				<SupportUs />
-			{:else if selectedTab === 'Contact'}
-				<Contact />
-			{/if}
+			</div>
 		</div>
 	</div>
 </body>
@@ -56,8 +59,17 @@
 	}
 
 	:global(h1) {
-		font-family: 'Architects Daughter';
+		font-family: 'Great Vibes';
 		display: none;
+		font-weight: 400;
+		font-size: 3.5rem;
+		line-height: 1.25;
+		text-transform: none;
+		letter-spacing: 0em;
+		text-align: center;
+		padding-block-start: 0.5em;
+		padding-block-end: 0.25em;
+		margin-block: 0em;
 	}
 	@media (min-width: 500px) {
 		:global(h1) {
@@ -75,7 +87,7 @@
 		.navContainer {
 			display: flex;
 			justify-content: space-evenly;
-			margin-bottom: 0px;
+			/* margin-bottom: 0px; */
 		}
 	}
 
@@ -122,19 +134,24 @@
 		margin-right: 18px;
 		font-family: Quicksand;
 	}
-	@media (max-width: 640px) {
-		.pageContainer {
-		}
-	}
 	@media (max-width: 270px) {
 		.pageContainer {
 			overflow-wrap: anywhere;
 		}
 	}
 
-	.app {
+	.contentContainer {
 		background-color: #f8f8f8;
-		min-height: 100%;
+		max-width: 800px;
+		margin-inline: auto;
+		padding: 20px;
+		min-height: calc(100vh - 20px);
+	}
+
+	.app {
 		margin: 0px;
+		background-color: #1fc8db;
+		background-image: linear-gradient(140deg, #eadedb 0%, #bc70a4 50%, #bfd641 75%);
+		background-attachment: fixed;
 	}
 </style>
