@@ -25,13 +25,13 @@
 		return 4294967296 * (2097151 & h2) + (h1 >>> 0);
 	};
 
-	$: isAuthenticated = hashedPassword === 7691749211987398 ? 'true' : 'false';
+	$: isAuthenticated = hashedPassword === 7691749211987398 ? 'authenticated' : '';
 </script>
 
 <div>
 	{#if isAuthenticated === 'loading'}
 		...
-	{:else if isAuthenticated}
+	{:else if isAuthenticated === 'authenticated'}
 		<slot />
 	{:else}
 		Password, please:
