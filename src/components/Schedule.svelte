@@ -1,11 +1,13 @@
 <script setup lang="ts">
+	import Rings from './Rings.svelte'
 </script>
 
 <div class="scheduleBox">
 	<div class="scheduleText">
-		<div>Step 1: Vows</div>
-		<div>Step 2: Finska</div>
-		<div>Step 3: Food</div>
+		<div>11am, </div>
+		<div>Location: Suzarosa, 17 Berambing Crest, Berambing NSW 2758</div>
+		<div>Lunch to be provided</div>
+		<Rings />
 	</div>
 </div>
 

@@ -1,6 +1,9 @@
 <div class="RSVPBox">
 	<div>Please RSVP below (it's a Google form, and might take a second to load).</div>
-	<div>If you have any questions or details you need to let us know about, or just don't want to use a Google form, feel free to contact us directly.</div>
+	<div>
+		If you have any questions or details you need to let us know about, or just don't want to use a
+		Google form, feel free to contact us directly.
+	</div>
 	<div>
 		<iframe
 			title="RSVP Form"
@@ -23,9 +26,5 @@
 
 	.RSVPBox div {
 		margin-bottom: 15px;
-	}
-
-	h1 {
-		font-family: 'Architects Daughter';
 	}
 </style>
