@@ -23,6 +23,7 @@
 		<AuthenticationProvider>
 			<h1>Mitch and Rachel</h1>
 			<h2>April 5th, 2025</h2>
+			<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
 			<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
 				{#each tabs as tab}
 					<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}>
@@ -71,6 +72,8 @@
 		letter-spacing: 0em;
 		text-align: center;
 		padding-block-start: 0.5em;
+		padding-block-end: 0em;
+		margin-block-end: 0em;
 		margin-block: 0em;
 	}
 	@media (min-width: 500px) {
@@ -79,7 +82,25 @@
 		}
 	}
 
-	:global(h2) {
+	h2 {
+		font-family: 'Great Vibes';
+		display: none;
+		font-weight: 400;
+		font-size: 1.25rem;
+		text-transform: none;
+		letter-spacing: 0em;
+		text-align: center;
+		padding-block-start: 0em;
+		padding-block-end: 0em;
+		margin-block: 0em;
+	}
+	@media (min-width: 500px) {
+		h2 {
+			display: block;
+		}
+	}
+
+	h3 {
 		font-family: 'Great Vibes';
 		display: none;
 		font-weight: 400;
@@ -92,7 +113,7 @@
 		margin-block: 0em;
 	}
 	@media (min-width: 500px) {
-		:global(h2) {
+		h3 {
 			display: block;
 		}
 	}
