@@ -4,8 +4,8 @@
 	import Home from '../components/Home.svelte';
 	import Registry from '../components/Registry.svelte';
 	import AuthenticationProvider from '../components/AuthenticationProvider.svelte';
-	const tabs = ['Home', 'Schedule', 'Registry', 'RSVP'];
-	let selectedTab = 'Home';
+	const tabs = ['Schedule', 'Registry', 'RSVP'];
+	let selectedTab = 'Schedule';
 	let expandedContainer = false;
 
 	const selectTab = (tab: string) => {
@@ -36,9 +36,8 @@
 			</div>
 			<div style="display: contents">
 				<div class="pageContainer">
-					{#if selectedTab === 'Home'}
+					{#if selectedTab === 'Schedule'}
 						<Home />
-					{:else if selectedTab === 'Schedule'}
 						<Schedule />
 					{:else if selectedTab === 'Registry'}
 						<Registry />
@@ -182,7 +181,7 @@
 	}
 
 	.contentContainer {
-		background-color: rgba(240, 240, 240, 0.90);
+		background-color: rgba(240, 240, 240, 0.93);
 		margin-block: 20px;
 		border-radius: 10px;
 		max-width: 800px;

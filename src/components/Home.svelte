@@ -2,30 +2,30 @@
 	import WavingMitchAndRachel from './WavingMitchAndRachel.svelte';
 </script>
 
-<div class="homeBox">
+<div class="home">
 	<WavingMitchAndRachel />
-	<div class="homeText">
-		<div>Yo it's Mitch and Raaaachel.</div>
+	<div class="homeBox">
 		<div>
-			We're pretty cool.
-		</div>
-		<div>
-			Come watch us get married.
+			<div>Yo it's Mitch and Raaaachel.</div>
+			<div>We're pretty cool.</div>
+			<div>Come watch us get married.</div>
 		</div>
 	</div>
 </div>
 
 <style>
-	.homeBox {
+	.home {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.homeBox div {
+	.home div {
 		margin-bottom: 15px;
 	}
 
-	.homeText {
-		display: inline-block;
+	.homeBox {
+		display: flex;
 		vertical-align: top;
 		max-width: 520px;
 	}
