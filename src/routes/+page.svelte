@@ -19,8 +19,8 @@
 </script>
 
 <body class="app" data-sveltekit-preload-data="hover">
-	<div class="contentContainer">
-		<AuthenticationProvider>
+	<AuthenticationProvider>
+		<div class="contentContainer">
 			<h1>Mitch and Rachel</h1>
 			<h2>April 5th, 2025</h2>
 			<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
@@ -47,8 +47,8 @@
 					{/if}
 				</div>
 			</div>
-		</AuthenticationProvider>
-	</div>
+		</div>
+	</AuthenticationProvider>
 </body>
 
 <style>
@@ -182,7 +182,9 @@
 	}
 
 	.contentContainer {
-		background-color: #f8f8f8;
+		background-color: rgba(240, 240, 240, 0.90);
+		margin-block: 20px;
+		border-radius: 10px;
 		max-width: 800px;
 		margin-inline: auto;
 		padding: 20px;
@@ -191,8 +193,13 @@
 
 	.app {
 		margin: 0px;
-		background-color: #1fc8db;
-		background-image: linear-gradient(140deg, #eadedb 0%, #bc70a4 50%, #bfd641 75%);
+		/* background-color: #1fc8db; */
+		/* background-image: linear-gradient(140deg, #eadedb 0%, #bc70a4 50%, #bfd641 75%); */
+		background-image: url('./suzarosa.svg');
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover; /* Resize the background image to cover the entire container */
 		background-attachment: fixed;
+		font-family: 'Quicksand', sans-serif;
 	}
 </style>

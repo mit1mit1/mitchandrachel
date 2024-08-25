@@ -35,12 +35,45 @@
 	{:else if isAuthenticated === 'authenticated'}
 		<slot />
 	{:else}
-		Password, please:
-		<input
-			on:input={(e) => {
-				hashedPassword = cyrb53(e?.currentTarget?.value ?? '', 24);
-				localStorage.setItem('hashedPassword', hashedPassword.toString());
-			}}
-		/>
+		<div class="flexCenter">
+			<div class="loginContainer">
+				<div class="field">
+					<div>Enter Password</div>
+					<input
+						on:input={(e) => {
+							hashedPassword = cyrb53(e?.currentTarget?.value ?? '', 24);
+							localStorage.setItem('hashedPassword', hashedPassword.toString());
+						}}
+					/>
+				</div>
+			</div>
+		</div>
 	{/if}
 </div>
+
+<style>
+	.field {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		max-width: 300px;
+	}
+
+	.field input {
+		padding: 5px;
+	}
+
+	.loginContainer {
+		display: inline-block;
+		min-width: 50%;
+		padding: 30px;
+		background-color: rgba(240, 240, 240, 0.90);
+		border-radius: 10px;
+	}
+
+	.flexCenter {
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+	}
+</style>
