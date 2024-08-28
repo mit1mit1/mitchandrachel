@@ -6,7 +6,7 @@
 	<WavingMitchAndRachel />
 	<div class="homeBox">
 		<div>
-			<div>Yo it's Mitch and Raaaachel.</div>
+			<div>Yo it's Mitch and Rachel.</div>
 			<div>We're pretty cool.</div>
 			<div>Come watch us get married.</div>
 		</div>

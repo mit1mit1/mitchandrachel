@@ -82,7 +82,7 @@
 	}
 
 	h2 {
-		font-family: 'Great Vibes';
+		font-family: 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 1.25rem;
@@ -100,7 +100,7 @@
 	}
 
 	h3 {
-		font-family: 'Great Vibes';
+		font-family: 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 1.5rem;
