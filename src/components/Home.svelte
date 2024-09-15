@@ -3,17 +3,22 @@
 </script>
 
 <div class="home">
-	<WavingMitchAndRachel />
+	<div class="padding-lg">
+		<WavingMitchAndRachel />
+	</div>
 	<div class="homeBox">
 		<div>
-			<div>Yo it's Mitch and Rachel.</div>
-			<div>We're pretty cool.</div>
-			<div>Come watch us get married.</div>
+			<div>Heyyoooo, it's Mitch and Rachel (and Birby).</div>
+			<div>We're getting married, come join us!</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.padding-lg {
+		padding: 25px;
+	}
+
 	.home {
 		display: flex;
 		justify-content: center;

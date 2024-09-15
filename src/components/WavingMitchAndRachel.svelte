@@ -1,4 +1,4 @@
-<svg width="150" height="250" viewBox="0 0 270 500" class="wavingMitchAndRachelSVG">
+<svg height="250" viewBox="0 0 270 500" class="wavingMitchAndRachelSVG">
 	<rect
 		class="stick-head"
 		x="80"

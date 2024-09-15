@@ -31,7 +31,7 @@
 		<Fan />
 		<div class="justify-between">
 			<div class="timeBox">1pm</div>
-			<h4>Celebration photos and refreshments</h4>
+			<h4>Group photos and refreshments</h4>
 		</div>
 	</div>
 	~
@@ -105,6 +105,7 @@
 		border: rgba(0, 0, 0, 0.2) 1px dashed;
 		max-width: 500px;
 		min-width: 70%;
+		min-height: 90px;
 	}
 
 	.justify-between {

@@ -1,10 +1,11 @@
 <script lang="ts">
 	import Schedule from '../components/Schedule.svelte';
 	import RSVP from '../components/RSVP.svelte';
+	import FAQ from '../components/FAQ.svelte';
 	import Home from '../components/Home.svelte';
 	import Registry from '../components/Registry.svelte';
 	import AuthenticationProvider from '../components/AuthenticationProvider.svelte';
-	const tabs = ['Schedule', 'Registry', 'RSVP'];
+	const tabs = ['Schedule', 'Registry', 'FAQ', 'RSVP'];
 	let selectedTab = 'Schedule';
 	let expandedContainer = false;
 
@@ -41,6 +42,8 @@
 						<Schedule />
 					{:else if selectedTab === 'Registry'}
 						<Registry />
+					{:else if selectedTab === 'FAQ'}
+						<FAQ />
 					{:else if selectedTab === 'RSVP'}
 						<RSVP />
 					{/if}
