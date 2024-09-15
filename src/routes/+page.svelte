@@ -50,6 +50,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="forceMargin" />
 	</AuthenticationProvider>
 </body>
 
@@ -203,5 +204,9 @@
 		background-size: cover; /* Resize the background image to cover the entire container */
 		background-attachment: fixed;
 		font-family: 'Quicksand', sans-serif;
+	}
+
+	.forceMargin {
+		min-height: 1px;
 	}
 </style>

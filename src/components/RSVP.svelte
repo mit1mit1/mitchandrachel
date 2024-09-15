@@ -13,7 +13,7 @@
 	</div>
 	<div>
 		If you have any questions or details you need to let us know about, or just don't want to use a
-		Google form, feel free to contact us directly.
+		Google form, feel free to contact us directly at <a href="mailto:mitchell.roberts11@gmail.com">mitchell.roberts11@gmail.com</a>.
 	</div>
 </div>
 <iframe
