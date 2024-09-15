@@ -8,11 +8,14 @@
 	import Fan from './Fan.svelte';
 	import ShearingShed from './ShearingShed.svelte';
 	import TreeHearts from './TreeHearts.svelte';
+	import Cocktail from './Cocktail.svelte';
 </script>
 
 <div class="schedule">
 	<div class="scheduleBox">
-		<ShearingShed />
+		<div class="iconBox">
+			<ShearingShed />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">11:30am</div>
 			<h4>Doors Open</h4>
@@ -20,7 +23,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Rings />
+		<div class="iconBox">
+			<Rings />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">12 noon</div>
 			<h4>Ceremony</h4>
@@ -28,7 +33,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Fan />
+		<div class="iconBox">
+			<Fan />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">1pm</div>
 			<h4>Group photos and refreshments</h4>
@@ -36,7 +43,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<TreeHearts />
+		<div class="iconBox">
+			<TreeHearts />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">1:30pm</div>
 			<h4>Lunch and lawn games</h4>
@@ -44,7 +53,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Birby />
+		<div class="iconBox">
+			<Birby />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">2:30pm</div>
 			<h4>Speeches</h4>
@@ -52,7 +63,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Saxaphone />
+		<div class="iconBox">
+			<Cocktail />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">3:00pm</div>
 			<h4>Dessert and cocktail bar</h4>
@@ -60,7 +73,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<GuitarAndFlowers />
+		<div class="iconBox">
+			<GuitarAndFlowers />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">3:30pm</div>
 			<h4>Jazz on the grass</h4>
@@ -68,7 +83,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<AutumnLeaves />
+		<div class="iconBox">
+			<AutumnLeaves />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">5:00pm</div>
 			<h4>End of formalities</h4>
@@ -76,7 +93,9 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Pizza />
+		<div class="iconBox">
+			<Pizza />
+		</div>
 		<div class="justify-between">
 			<div class="timeBox">7:00pm</div>
 			<h4>Informal dinner</h4>
@@ -85,6 +104,12 @@
 </div>
 
 <style>
+	.iconBox {
+		min-width: 90px;
+		display: flex;
+		justify-content: center;
+	}
+
 	.schedule {
 		display: flex;
 		flex-wrap: wrap;

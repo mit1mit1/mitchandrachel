@@ -38,14 +38,22 @@
 			<div style="display: contents">
 				<div class="pageContainer">
 					{#if selectedTab === 'Schedule'}
-						<Home />
-						<Schedule />
+						<div class="fadeIn">
+							<Home />
+							<Schedule />
+						</div>
 					{:else if selectedTab === 'Registry'}
-						<Registry />
+						<div class="fadeIn">
+							<Registry />
+						</div>
 					{:else if selectedTab === 'FAQ'}
-						<FAQ />
+						<div class="fadeIn">
+							<FAQ />
+						</div>
 					{:else if selectedTab === 'RSVP'}
-						<RSVP />
+						<div class="fadeIn">
+							<RSVP />
+						</div>
 					{/if}
 				</div>
 			</div>
@@ -55,6 +63,19 @@
 </body>
 
 <style>
+	/* TODO figure out animations */
+	.fadeIn.visible {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 2s linear;
+	}
+
+	.fadeIn.hidden {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 2s, opacity 2s linear;
+	}
+
 	.buttonIcon {
 		float: left;
 		padding-top: 2px;
