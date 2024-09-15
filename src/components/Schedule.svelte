@@ -1,12 +1,18 @@
 <script setup lang="ts">
 	import Pizza from './Pizza.svelte';
 	import Rings from './Rings.svelte';
+	import Birby from './Birby.svelte';
 	import Saxaphone from './Saxaphone.svelte';
+	import GuitarAndFlowers from './GuitarAndFlowers.svelte';
+	import AutumnLeaves from './AutumnLeaves.svelte';
+	import Fan from './Fan.svelte';
+	import ShearingShed from './ShearingShed.svelte';
+	import TreeHearts from './TreeHearts.svelte';
 </script>
 
 <div class="schedule">
 	<div class="scheduleBox">
-		<Rings />
+		<ShearingShed />
 		<div class="justify-between">
 			<div class="timeBox">11:30am</div>
 			<h4>Doors Open</h4>
@@ -22,7 +28,7 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Pizza />
+		<Fan />
 		<div class="justify-between">
 			<div class="timeBox">1pm</div>
 			<h4>Celebration photos and refreshments</h4>
@@ -30,7 +36,7 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Pizza />
+		<TreeHearts />
 		<div class="justify-between">
 			<div class="timeBox">1:30pm</div>
 			<h4>Lunch and lawn games</h4>
@@ -38,7 +44,7 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Saxaphone />
+		<Birby />
 		<div class="justify-between">
 			<div class="timeBox">2:30pm</div>
 			<h4>Speeches</h4>
@@ -54,7 +60,7 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Saxaphone />
+		<GuitarAndFlowers />
 		<div class="justify-between">
 			<div class="timeBox">3:30pm</div>
 			<h4>Jazz on the grass</h4>
@@ -62,7 +68,7 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Saxaphone />
+		<AutumnLeaves />
 		<div class="justify-between">
 			<div class="timeBox">5:00pm</div>
 			<h4>End of formalities</h4>
@@ -70,7 +76,7 @@
 	</div>
 	~
 	<div class="scheduleBox">
-		<Saxaphone />
+		<Pizza />
 		<div class="justify-between">
 			<div class="timeBox">7:00pm</div>
 			<h4>Informal dinner</h4>

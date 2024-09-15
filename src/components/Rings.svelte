@@ -1,6 +1,6 @@
 <svg
-   width="70"
-   height="70"
+   width="80"
+   height="80"
    viewBox="0 0 100 100"
    version="1.1"
    id="svg1"

@@ -1,5 +1,16 @@
+<script>
+	import ExternalLinkIcon from './ExternalLinkIcon.svelte';
+</script>
+
 <div class="RSVPBox">
-	<div>Please RSVP below (it's a Google form, and might take a second to load).</div>
+	<div>
+		Please RSVP with the form below. If it doesn't load you can use <a
+			rel="noreferrer"
+			target="_blank"
+			href="https://docs.google.com/forms/d/e/1FAIpQLSfsjA0psK_P3OJLfxAZ1m4AtLnIWEKuGRYPk4Xn02oUasfqpg/viewform?usp=sf_link"
+			>this link <ExternalLinkIcon /></a
+		>.
+	</div>
 	<div>
 		If you have any questions or details you need to let us know about, or just don't want to use a
 		Google form, feel free to contact us directly.
