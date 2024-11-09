@@ -159,17 +159,21 @@
 	.navContainer button {
 		margin-bottom: 5px;
 		transition-duration: 0.4s;
-		border: none;
 		padding: 8px 12px;
 		width: 100%;
 		font-size: 1.15em;
 		font-family: 'Quicksand', sans-serif;
 		cursor: pointer;
-		color: black;
 		min-height: 50px;
 		overflow: hidden;
 		transition: max-height 0.5s ease-out;
 		display: none;
+		color: #4a2a2f;
+		background-color: #ebddbf;
+		border-top: 0px;
+		border-bottom: 0px;
+		border-left: 1px solid #ead8b3;
+		border-right: 1px solid #ead8b3;
 	}
 	@media (min-width: 500px) {
 		.navContainer button {
@@ -187,11 +191,11 @@
 	}
 
 	.navContainer button:hover {
-		background-color: #c4c3c3;
+		background-color: #ead8b3;
 	}
 
 	.navContainer .selectedTab {
-		background-color: #d7d7d7;
+		background-color: #e7cf9f;
 	}
 
 	.pageContainer {
@@ -206,7 +210,8 @@
 	}
 
 	.contentContainer {
-		background-color: rgba(240, 240, 240, 0.93);
+		background-color: #ebe2d0;
+		color: #7e5451;
 		margin-block: 20px;
 		border-radius: 10px;
 		max-width: 800px;
