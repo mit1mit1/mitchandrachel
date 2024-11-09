@@ -5,6 +5,7 @@
 	import Home from '../components/Home.svelte';
 	import Registry from '../components/Registry.svelte';
 	import AuthenticationProvider from '../components/AuthenticationProvider.svelte';
+	
 	const tabs = ['Schedule', 'Registry', 'FAQ', 'RSVP'];
 	let selectedTab = 'Schedule';
 	let expandedContainer = false;
@@ -22,16 +23,20 @@
 <body class="app" data-sveltekit-preload-data="hover">
 	<AuthenticationProvider>
 		<div class="contentContainer">
+			
 			<h1>Mitch and Rachel</h1>
 			<h2>April 5th, 2025</h2>
 			<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
 			<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
 				{#each tabs as tab}
-					<button on:click={() => selectTab(tab)} class={tab === selectedTab ? 'selectedTab' : ''}>
+					<button
+						on:click={() => selectTab(tab)}
+						class={tab === selectedTab ? 'selectedTab animateUnderline' : 'animateUnderline'}
+					>
 						{#if tab === selectedTab && expandedContainer === false}
 							<i class="fa-solid fa-bars phoneOnly buttonIcon" />
 						{/if}
-						{tab}
+						<span class="">{tab}</span>
 					</button>
 				{/each}
 			</div>
@@ -156,6 +161,29 @@
 		}
 	}
 
+	.animateUnderline > span {
+		position: relative;
+	}
+
+	.animateUnderline:hover > span::after,
+	.animateUnderline:focus > span::after,
+	.selectedTab.animateUnderline > span::after {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+
+	.animateUnderline > span::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background-color: #714943;
+		transition: transform 0.25s ease-out;
+	}
+
 	.navContainer button {
 		margin-bottom: 5px;
 		transition-duration: 0.4s;
@@ -169,11 +197,8 @@
 		transition: max-height 0.5s ease-out;
 		display: none;
 		color: #4a2a2f;
-		background-color: #ebddbf;
-		border-top: 0px;
-		border-bottom: 0px;
-		border-left: 1px solid #ead8b3;
-		border-right: 1px solid #ead8b3;
+		background-color: transparent;
+		border: none;
 	}
 	@media (min-width: 500px) {
 		.navContainer button {
@@ -190,14 +215,6 @@
 		display: inline-block;
 	}
 
-	.navContainer button:hover {
-		background-color: #ead8b3;
-	}
-
-	.navContainer .selectedTab {
-		background-color: #e7cf9f;
-	}
-
 	.pageContainer {
 		margin-left: 18px;
 		margin-right: 18px;
@@ -212,18 +229,14 @@
 	.contentContainer {
 		background-color: #ebe2d0;
 		color: #7e5451;
-		margin-block: 20px;
-		border-radius: 10px;
 		max-width: 800px;
 		margin-inline: auto;
 		padding: 20px;
-		min-height: calc(100vh - 20px);
+		min-height: 100vh;
 	}
 
 	.app {
 		margin: 0px;
-		/* background-color: #1fc8db; */
-		/* background-image: linear-gradient(140deg, #eadedb 0%, #bc70a4 50%, #bfd641 75%); */
 		background-image: url('./suzarosa.svg');
 		background-position: center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */
@@ -236,13 +249,11 @@
 		min-height: 1px;
 	}
 
-
 	:global(a) {
-		color: rgb(110,150,134)
+		color: rgb(110, 150, 134);
 	}
-	
-	:global(a:visited) {
-		color: rgb(22,70,69)
 
+	:global(a:visited) {
+		color: rgb(22, 70, 69);
 	}
 </style>

@@ -17,6 +17,7 @@
 				and we can organize for you to be picked up from the station.
 			</div>
 		</div>
+		<div class="centeredDivider">-----</div>
 		<div class="question">Do I need to stay nearby?</div>
 		<div class="answer">
 			<div>
@@ -28,6 +29,7 @@
 				bunch of hotels scattered throughout the mountains.
 			</div>
 		</div>
+		<div class="centeredDivider">-----</div>
 		<div class="question">What the heck is an informal dinner?</div>
 		<div class="answer">
 			<div>
@@ -41,13 +43,19 @@
 			</div>
 		</div>
 	</ul>
-
+	<div class="centeredDivider">-----</div>
 	More questions to be answered here once people start asking questions I guess...?
 </div>
 
 <style>
+	.centeredDivider {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0px;
+	}
+
 	.faqBox {
-		max-width: 550px;
+		max-width: 650px;
 		margin: auto;
 	}
 
@@ -62,5 +70,9 @@
 
 	.answer div {
 		margin-bottom: 5px;
+	}
+
+	ul {
+		padding: 0;
 	}
 </style>

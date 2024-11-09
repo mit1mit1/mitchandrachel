@@ -1,15 +1,15 @@
 <script setup lang="ts">
-	import WavingMitchAndRachel from './WavingMitchAndRachel.svelte';
+	import gandalfAndFrodo from '../img/gandalfAndFrodo.jpg';
 </script>
 
 <div class="home">
 	<div class="padding-lg">
-		<WavingMitchAndRachel />
+		<img src={gandalfAndFrodo} alt="flag" width="250px" />
 	</div>
 	<div class="homeBox">
 		<div>
-			<div>Heyyoooo, it's Mitch and Rachel (and Birby).</div>
-			<div>We're getting married, come join us!</div>
+			<div>Heyyoooo, it's Mitch and Rachel.</div>
+			<div>We're getting married, and we'd love you to join us!</div>
 		</div>
 	</div>
 </div>
@@ -32,6 +32,6 @@
 	.homeBox {
 		display: flex;
 		vertical-align: top;
-		max-width: 520px;
+		max-width: 650px;
 	}
 </style>

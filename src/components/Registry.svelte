@@ -4,7 +4,7 @@
 
 <div class="registryBox">
 	<div>
-		Your presence is all that is required! However, if you want to give something, we have three
+		Your presence is all that is required! However, if you want to give something, we have two
 		options:
 		<ul>
 			<li>
@@ -16,22 +16,14 @@
 					rel="noreferrer">this spreadsheet <ExternalLinkIcon /></a
 				>;
 			</li>
-			<li>
-				If you're down to give to charity, we think <a
-					href="https://www.givedirectly.org"
-					target="_blank"
-					rel="noreferrer">givedirectly.org <ExternalLinkIcon /></a
-				>
-				does a good job;
-			</li>
-			<li>Finally, we're doing a wishing well if you'd like to chip in for our honeymoon.</li>
+			<li>We're doing a wishing well if you'd like to chip in for our honeymoon or a long distant house deposit.</li>
 		</ul>
 	</div>
 </div>
 
 <style>
 	.registryBox {
-		max-width: 550px;
+		max-width: 650px;
 		margin: auto;
 	}
 

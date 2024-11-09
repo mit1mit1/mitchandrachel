@@ -3,8 +3,9 @@
 </script>
 
 <div class="RSVPBox">
+	<div>Please RSVP with the form below.</div>
 	<div>
-		Please RSVP with the form below. If it doesn't load you can use <a
+		If it doesn't load you can use <a
 			rel="noreferrer"
 			target="_blank"
 			href="https://docs.google.com/forms/d/e/1FAIpQLSfsjA0psK_P3OJLfxAZ1m4AtLnIWEKuGRYPk4Xn02oUasfqpg/viewform?usp=sf_link"
@@ -13,7 +14,9 @@
 	</div>
 	<div>
 		If you have any questions or details you need to let us know about, or just don't want to use a
-		Google form, feel free to contact us directly at <a href="mailto:mitchell.roberts11@gmail.com">mitchell.roberts11@gmail.com</a>.
+		Google form, feel free to contact us directly at <a href="mailto:mitchell.roberts11@gmail.com"
+			>mitchell.roberts11@gmail.com</a
+		>.
 	</div>
 </div>
 <iframe
@@ -30,7 +33,7 @@
 
 <style>
 	.RSVPBox {
-		max-width: 550px;
+		max-width: 650px;
 		margin: auto;
 	}
 
