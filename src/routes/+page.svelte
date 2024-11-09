@@ -230,4 +230,14 @@
 	.forceMargin {
 		min-height: 1px;
 	}
+
+
+	:global(a) {
+		color: rgb(110,150,134)
+	}
+	
+	:global(a:visited) {
+		color: rgb(22,70,69)
+
+	}
 </style>
