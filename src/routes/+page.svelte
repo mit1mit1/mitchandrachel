@@ -22,23 +22,23 @@
 
 <body class="app" data-sveltekit-preload-data="hover">
 	<AuthenticationProvider>
+		<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
+			{#each tabs as tab}
+				<button
+					on:click={() => selectTab(tab)}
+					class={tab === selectedTab ? 'selectedTab animateUnderline' : 'animateUnderline'}
+				>
+					{#if tab === selectedTab && expandedContainer === false}
+						<i class="fa-solid fa-bars phoneOnly buttonIcon" />
+					{/if}
+					<span class="">{tab}</span>
+				</button>
+			{/each}
+		</div>
 		<div class="contentContainer">
 			<h1>MITCH & RACHEL</h1>
-			<h2>April 5th, 2025</h2>
-			<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
-			<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
-				{#each tabs as tab}
-					<button
-						on:click={() => selectTab(tab)}
-						class={tab === selectedTab ? 'selectedTab animateUnderline' : 'animateUnderline'}
-					>
-						{#if tab === selectedTab && expandedContainer === false}
-							<i class="fa-solid fa-bars phoneOnly buttonIcon" />
-						{/if}
-						<span class="">{tab}</span>
-					</button>
-				{/each}
-			</div>
+			<h2>0 5 . 0 4 . 2 0 2 5</h2>
+
 			<div style="display: contents">
 				<div class="pageContainer">
 					{#if selectedTab === 'SCHEDULE'}
@@ -113,7 +113,6 @@
 		text-transform: none;
 		letter-spacing: 0em;
 		text-align: center;
-		padding-block-start: 0.5em;
 		padding-block-end: 0em;
 		margin-block-end: 0em;
 		margin-block: 0em;
@@ -125,15 +124,16 @@
 	}
 
 	h2 {
-		font-family: 'Perpetua', 'PoorRichard', 'Merienda', 'Great Vibes';
+		font-family: 'PoorRichard', 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		text-transform: none;
 		letter-spacing: 0em;
 		text-align: center;
 		padding-block-start: 0.5em;
 		margin-block: 0em;
+		margin-bottom: 100px;
 	}
 	@media (min-width: 500px) {
 		h2 {
@@ -163,7 +163,10 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		margin-bottom: 20px;
+		max-width: 1080px;
+		margin-inline: auto;
+		margin-top: 20px;
+		margin-bottom: 100px;
 	}
 	@media (min-width: 500px) {
 		.navContainer {
@@ -242,14 +245,13 @@
 	.contentContainer {
 		background-color: #ebe2d0;
 		color: #7e5451;
-		max-width: 800px;
+		max-width: 1080px;
 		margin-inline: auto;
 		padding: 20px;
 		min-height: 100vh;
 	}
 
 	.app {
-
 		background-color: #ebe2d0;
 		margin: 0px;
 		/* background-image: url('./suzarosa.svg'); */

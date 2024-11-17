@@ -12,6 +12,9 @@
 </script>
 
 <div class="schedule">
+	<h4>Event info:</h4>
+	<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
+	<h4>Schedule:</h4>
 	<div class="scheduleBox">
 		<div class="iconBox">
 			<ShearingShed />
