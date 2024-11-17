@@ -34,7 +34,7 @@
 		<div class="answer">
 			<div>
 				Since we know a few people will be staying nearby, and there's not much in the way of
-				restaurants in Bilpin, we're doing an informal dinner at the property for anyone who feels
+				restaurants in Bilpin, we're providing a chill dinner at the property for anyone who feels
 				like sticking around.
 			</div>
 			<div>
@@ -44,7 +44,7 @@
 		</div>
 	</ul>
 	<div class="centeredDivider">-----</div>
-	More questions to be answered here once people start asking questions I guess...?
+	Let us know if you have any other questions!
 </div>
 
 <style>

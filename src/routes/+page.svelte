@@ -6,8 +6,8 @@
 	import Registry from '../components/Registry.svelte';
 	import AuthenticationProvider from '../components/AuthenticationProvider.svelte';
 
-	const tabs = ['Schedule', 'Registry', 'FAQ', 'RSVP'];
-	let selectedTab = 'Schedule';
+	const tabs = ['SCHEDULE', 'REGISTRY', 'FAQ', 'RSVP'];
+	let selectedTab = 'SCHEDULE';
 	let expandedContainer = false;
 
 	const selectTab = (tab: string) => {
@@ -41,12 +41,12 @@
 			</div>
 			<div style="display: contents">
 				<div class="pageContainer">
-					{#if selectedTab === 'Schedule'}
+					{#if selectedTab === 'SCHEDULE'}
 						<div class="fadeIn">
 							<Home />
 							<Schedule />
 						</div>
-					{:else if selectedTab === 'Registry'}
+					{:else if selectedTab === 'REGISTRY'}
 						<div class="fadeIn">
 							<Registry />
 						</div>
@@ -109,7 +109,7 @@
 		font-family: 'PoorRichard', 'Great Vibes';
 		display: none;
 		font-weight: 400;
-		font-size: 3.5rem;
+		font-size: 3rem;
 		text-transform: none;
 		letter-spacing: 0em;
 		text-align: center;
@@ -125,15 +125,14 @@
 	}
 
 	h2 {
-		font-family: 'PoorRichard', 'Merienda', 'Great Vibes';
+		font-family: 'Perpetua', 'PoorRichard', 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 1.25rem;
 		text-transform: none;
 		letter-spacing: 0em;
 		text-align: center;
-		padding-block-start: 0em;
-		padding-block-end: 0em;
+		padding-block-start: 0.5em;
 		margin-block: 0em;
 	}
 	@media (min-width: 500px) {
@@ -143,7 +142,7 @@
 	}
 
 	h3 {
-		font-family: 'PoorRichard', 'Merienda', 'Great Vibes';
+		font-family: 'Perpetua', 'PoorRichard', 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 1.5rem;
@@ -203,13 +202,13 @@
 		padding: 8px 12px;
 		width: 100%;
 		font-size: 1.15em;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'PoorRichard', 'Quicksand', sans-serif;
 		cursor: pointer;
 		min-height: 50px;
 		overflow: hidden;
 		transition: max-height 0.5s ease-out;
 		display: none;
-		color: #4a2a2f;
+		color: #4f2e33;
 		background-color: transparent;
 		border: none;
 	}
@@ -232,6 +231,7 @@
 		margin-left: 18px;
 		margin-right: 18px;
 		font-family: Perpetua;
+		font-size: 1.25em;
 	}
 	@media (max-width: 270px) {
 		.pageContainer {
@@ -249,8 +249,10 @@
 	}
 
 	.app {
+
+		background-color: #ebe2d0;
 		margin: 0px;
-		background-image: url('./suzarosa.svg');
+		/* background-image: url('./suzarosa.svg'); */
 		background-position: center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */
 		background-size: cover; /* Resize the background image to cover the entire container */

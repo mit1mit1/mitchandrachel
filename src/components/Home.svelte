@@ -8,7 +8,7 @@
 	</div>
 	<div class="homeBox">
 		<div>
-			<div>Heyyoooo, it's Mitch and Rachel.</div>
+			<div>Hey friends and fam -</div>
 			<div>We're getting married, and we'd love you to join us!</div>
 		</div>
 	</div>
