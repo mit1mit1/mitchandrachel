@@ -3,8 +3,16 @@
 </script>
 
 <div class="RSVPBox">
-	<div>Please RSVP with the form below.</div>
-	<div>
+	<div class="smallScreenOnly">
+		Please RSVP using <a
+			rel="noreferrer"
+			target="_blank"
+			href="https://docs.google.com/forms/d/e/1FAIpQLSfsjA0psK_P3OJLfxAZ1m4AtLnIWEKuGRYPk4Xn02oUasfqpg/viewform?usp=sf_link"
+			>this google form <ExternalLinkIcon /></a
+		>.
+	</div>
+	<div class="largeScreenOnly">Please RSVP with the form below.</div>
+	<div class="largeScreenOnly">
 		If it doesn't load you can use <a
 			rel="noreferrer"
 			target="_blank"
@@ -19,7 +27,7 @@
 		>.
 	</div>
 </div>
-<div class="formWrapper">
+<div class="formWrapper largeScreenOnly">
 	<iframe
 		title="RSVP Form"
 		src="https://docs.google.com/forms/d/e/1FAIpQLSfsjA0psK_P3OJLfxAZ1m4AtLnIWEKuGRYPk4Xn02oUasfqpg/viewform?embedded=true"
@@ -34,6 +42,24 @@
 </div>
 
 <style>
+	.smallScreenOnly {
+		display: none;
+	}
+	@media (max-width: 800px) {
+		.smallScreenOnly {
+			display: block;
+		}
+	}
+
+	.largeScreenOnly {
+		display: none;
+	}
+	@media (min-width: 801px) {
+		.largeScreenOnly {
+			display: block;
+		}
+	}
+
 	.formWrapper {
 		max-width: 800px;
 		margin: auto;

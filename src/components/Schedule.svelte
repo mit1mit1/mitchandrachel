@@ -13,10 +13,10 @@
 
 <div class="schedule">
 	<div>
-		<h4 class="preheading">Location:</h4>
-		<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
+		<h4 class="preheading">LOCATION</h4>
+		<div class="location">Suzarosa, 17 Berambing Crest, Berambing NSW 2758</div>
 	</div>
-	<h4 class="preheading">Schedule:</h4>
+	<h4 class="preheading">SCHEDULE</h4>
 	<div class="scheduleBox">
 		<div class="iconBox">
 			<i class="scheduleIcon fa-solid fa-door-open" />
@@ -129,6 +129,7 @@
 	.preheading {
 		padding-bottom: 0;
 		margin-bottom: 0;
+		font-family: 'PoorRichard', 'Quicksand', sans-serif;
 	}
 
 	.scheduleIcon {

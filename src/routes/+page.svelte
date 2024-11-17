@@ -107,7 +107,8 @@
 
 	:global(h1) {
 		font-family: 'PoorRichard', 'Great Vibes';
-		display: none;
+
+		display: block;
 		font-weight: 400;
 		font-size: 3rem;
 		text-transform: none;
@@ -117,15 +118,10 @@
 		margin-block-end: 0em;
 		margin-block: 0em;
 	}
-	@media (min-width: 500px) {
-		:global(h1) {
-			display: block;
-		}
-	}
 
 	h2 {
 		font-family: 'PoorRichard', 'Merienda', 'Great Vibes';
-		display: none;
+		display: block;
 		font-weight: 400;
 		font-size: 1.5rem;
 		text-transform: none;
@@ -135,12 +131,7 @@
 		margin-block: 0em;
 		margin-bottom: 100px;
 	}
-	@media (min-width: 500px) {
-		h2 {
-			display: block;
-		}
-	}
-
+	/* 
 	h3 {
 		font-family: 'Perpetua', 'PoorRichard', 'Merienda', 'Great Vibes';
 		display: none;
@@ -157,7 +148,7 @@
 		h3 {
 			display: block;
 		}
-	}
+	} */
 
 	.navContainer {
 		list-style-type: none;
@@ -165,12 +156,13 @@
 		padding: 0;
 		max-width: 1080px;
 		margin-inline: auto;
-		margin-top: 20px;
 		margin-bottom: 100px;
+		margin-top: 10px;
 	}
 	@media (min-width: 500px) {
 		.navContainer {
 			display: flex;
+			margin-top: 20px;
 			justify-content: space-evenly;
 			/* margin-bottom: 0px; */
 		}
@@ -247,8 +239,12 @@
 		color: #7e5451;
 		max-width: 1080px;
 		margin-inline: auto;
-		padding: 20px;
 		min-height: 100vh;
+	}
+	@media (min-width: 500px) {
+		.pageContainer {
+			padding: 20px;
+		}
 	}
 
 	.app {
