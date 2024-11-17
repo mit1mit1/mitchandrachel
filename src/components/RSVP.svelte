@@ -19,19 +19,27 @@
 		>.
 	</div>
 </div>
-<iframe
-	title="RSVP Form"
-	src="https://docs.google.com/forms/d/e/1FAIpQLSfsjA0psK_P3OJLfxAZ1m4AtLnIWEKuGRYPk4Xn02oUasfqpg/viewform?embedded=true"
-	width="800px"
-	height="1214"
-	frameborder="0"
-	marginheight="0"
-	marginwidth="0"
->
-	Loading…
-</iframe>
+<div class="formWrapper">
+	<iframe
+		title="RSVP Form"
+		src="https://docs.google.com/forms/d/e/1FAIpQLSfsjA0psK_P3OJLfxAZ1m4AtLnIWEKuGRYPk4Xn02oUasfqpg/viewform?embedded=true"
+		width="800px"
+		height="1214"
+		frameborder="0"
+		marginheight="0"
+		marginwidth="0"
+	>
+		Loading…
+	</iframe>
+</div>
 
 <style>
+	.formWrapper {
+		max-width: 800px;
+		margin: auto;
+		margin-top: 50px;
+	}
+
 	.RSVPBox {
 		max-width: 650px;
 		margin: auto;

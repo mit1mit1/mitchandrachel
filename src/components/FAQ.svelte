@@ -3,6 +3,13 @@
 
 <div class="faqBox">
 	<ul>
+		<div class="question">What's the dress code?</div>
+		<div class="answer">
+			<div>
+				Smart casual, garden party - cottage vibes if you have it.
+			</div>
+		</div>
+		<div class="centeredDivider">-----</div>
 		<div class="question">How do I get there?</div>
 		<div class="answer">
 			<div>
