@@ -5,7 +5,7 @@
 	import Home from '../components/Home.svelte';
 	import Registry from '../components/Registry.svelte';
 	import AuthenticationProvider from '../components/AuthenticationProvider.svelte';
-	
+
 	const tabs = ['Schedule', 'Registry', 'FAQ', 'RSVP'];
 	let selectedTab = 'Schedule';
 	let expandedContainer = false;
@@ -23,8 +23,7 @@
 <body class="app" data-sveltekit-preload-data="hover">
 	<AuthenticationProvider>
 		<div class="contentContainer">
-			
-			<h1>Mitch and Rachel</h1>
+			<h1>MITCH & RACHEL</h1>
 			<h2>April 5th, 2025</h2>
 			<h3>Suzarosa, 17 Berambing Crest, Berambing NSW 2758</h3>
 			<div class={`navContainer ${expandedContainer ? 'expandedContainer' : ''}`}>
@@ -68,6 +67,20 @@
 </body>
 
 <style>
+	@font-face {
+		font-family: 'PoorRichard';
+		src: url('/font/PoorRichardOpti.otf') format('opentype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Perpetua';
+		src: url('/font/perpetua.ttf');
+		font-weight: normal;
+		font-style: normal;
+	}
+
 	/* TODO figure out animations */
 	.fadeIn.visible {
 		visibility: visible;
@@ -93,7 +106,7 @@
 	}
 
 	:global(h1) {
-		font-family: 'Great Vibes';
+		font-family: 'PoorRichard', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 3.5rem;
@@ -112,7 +125,7 @@
 	}
 
 	h2 {
-		font-family: 'Merienda', 'Great Vibes';
+		font-family: 'PoorRichard', 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 1.25rem;
@@ -130,7 +143,7 @@
 	}
 
 	h3 {
-		font-family: 'Merienda', 'Great Vibes';
+		font-family: 'PoorRichard', 'Merienda', 'Great Vibes';
 		display: none;
 		font-weight: 400;
 		font-size: 1.5rem;
@@ -218,7 +231,7 @@
 	.pageContainer {
 		margin-left: 18px;
 		margin-right: 18px;
-		font-family: Quicksand;
+		font-family: Perpetua;
 	}
 	@media (max-width: 270px) {
 		.pageContainer {
