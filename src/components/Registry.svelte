@@ -4,7 +4,7 @@
 
 <div class="registryBox">
 	<div>
-		Your presence is all that is required! However, if you want to give something, we have two
+		Your presence is all that is required! However, if you want to give something, we have three
 		options:
 		<ul>
 			<li>
@@ -25,6 +25,16 @@
 					<li>Bank name: Summerland Bank</li>
 				</ul>
 			</li>
+			<li>
+				If you have any words of wisdom, recipes or poems or quotes you love, messages, songs or
+				anything else you think is vaguely relevant to weddings or living with people or us in
+				particular we'd love to hear them - if you want to send them to us virtually we've put
+				together a little <a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSeGFI8sH42O3vdTxeA2VKZt6fYXBEhgLIMYQyJRJhMHqTC7AA/viewform?usp=sf_link"
+					target="_blank"
+					rel="noreferrer">google form <ExternalLinkIcon /></a
+				>.
+			</li>
 		</ul>
 	</div>
 </div>
@@ -36,7 +46,6 @@
 	}
 
 	.registryBox div,
-
 	.registryBox li {
 		margin-bottom: 15px;
 	}
