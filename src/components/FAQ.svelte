@@ -5,9 +5,7 @@
 	<ul>
 		<div class="question">What's the dress code?</div>
 		<div class="answer">
-			<div>
-				Smart casual, garden party - cottage vibes if you have it.
-			</div>
+			<div>Smart casual, garden party - cottage vibes if you have it.</div>
 		</div>
 		<div class="centeredDivider">-----</div>
 		<div class="question">How do I get there?</div>
@@ -48,6 +46,11 @@
 				You're very welcome to join us for this, but please don't feel any pressure to - all the
 				exciting parts of the day will be finished up before this.
 			</div>
+		</div>
+		<div class="centeredDivider">-----</div>
+		<div class="question">Will the registry have more than three things added to it?</div>
+		<div class="answer">
+			<div>Maybe - check back later to see I guess?</div>
 		</div>
 	</ul>
 	<div class="centeredDivider">-----</div>

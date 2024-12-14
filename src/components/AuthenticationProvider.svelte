@@ -26,7 +26,7 @@
 		return 4294967296 * (2097151 & h2) + (h1 >>> 0);
 	};
 
-	$: isAuthenticated = hashedPassword === 7691749211987398 ? 'authenticated' : '';
+	$: isAuthenticated = hashedPassword === 3727123656221729 ? 'authenticated' : '';
 </script>
 
 <div>
@@ -38,7 +38,8 @@
 		<div class="flexCenter">
 			<div class="loginContainer">
 				<div class="field">
-					<div>Enter Password</div>
+					<div>What is the name of the wedding venue?</div>
+					<div class="textSm">Hint - it's on the invitation</div>
 					<input
 						on:input={(e) => {
 							hashedPassword = cyrb53(e?.currentTarget?.value ?? '', 24);
@@ -67,7 +68,7 @@
 		display: inline-block;
 		min-width: 50%;
 		padding: 30px;
-		background-color: rgba(240, 240, 240, 0.90);
+		background-color: rgba(240, 240, 240, 0.9);
 		border-radius: 10px;
 	}
 
@@ -75,5 +76,9 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 50px;
+	}
+
+	.textSm {
+		font-size: 0.8em;
 	}
 </style>
