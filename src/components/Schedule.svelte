@@ -56,7 +56,7 @@
 			<i class="scheduleIcon fa-solid fa-burger" />
 		</div>
 		<div class="justify-between">
-			<div class="timeBox">1:00pm</div>
+			<div class="timeBox">1:30pm</div>
 			<h4>Lunch and lawn games</h4>
 		</div>
 	</div>
@@ -69,7 +69,7 @@
 			<!-- <i class="scheduleIcon fa-regular fa-comments" /> -->
 		</div>
 		<div class="justify-between">
-			<div class="timeBox">2:00pm</div>
+			<div class="timeBox">2:30pm</div>
 			<h4>Speeches</h4>
 		</div>
 	</div>
@@ -80,7 +80,7 @@
 			<i class="scheduleIcon fa-solid fa-martini-glass-citrus" />
 		</div>
 		<div class="justify-between">
-			<div class="timeBox">2:30pm</div>
+			<div class="timeBox">3:00pm</div>
 			<h4>Dessert and cocktail bar</h4>
 		</div>
 	</div>
@@ -91,7 +91,7 @@
 			<i class="scheduleIcon fa-solid fa-guitar" />
 		</div>
 		<div class="justify-between">
-			<div class="timeBox">3:00pm</div>
+			<div class="timeBox">4:00pm</div>
 			<h4>Jazz on the grass</h4>
 		</div>
 	</div>
@@ -102,7 +102,7 @@
 			<i class="scheduleIcon fa-brands fa-pagelines" />
 		</div>
 		<div class="justify-between">
-			<div class="timeBox">4:30pm</div>
+			<div class="timeBox">5:00pm</div>
 			<h4>End of formalities</h4>
 		</div>
 	</div>

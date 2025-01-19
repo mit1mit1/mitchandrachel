@@ -1,10 +1,10 @@
 <script setup lang="ts">
-	import gandalfAndFrodo from '../img/gandalfAndFrodo.jpg';
+	import smilingHiking from '../img/smilingHiking.jpeg';
 </script>
 
 <div class="home">
 	<div class="padding-lg">
-		<img src={gandalfAndFrodo} alt="flag" width="250px" />
+		<img src={smilingHiking} alt="flag" width="250px" />
 	</div>
 	<div class="homeBox">
 		<div>
